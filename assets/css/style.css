@@ -15,15 +15,21 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(230, 151, 6, 0.5);
   background-color: transparent;
-  color: rgb(204, 141, 6);
+  color: rgb(8, 49, 255);
   border-radius: 0;
   margin-bottom: 10px;
-  background-image: url("../images/backgroundImage.jpg");
+  background-image: url("../images/backgroundImage_edited.jpg");
   background-image: -o-repeating-linear-gradient();
   background-size: contain;
+  
   /* border-bottom: 10px solid black; */
+}
+
+.fontOpac {
+  opacity: 0.2;
 }
 
 .lead {
