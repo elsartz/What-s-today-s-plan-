@@ -18,7 +18,10 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="./assets/css/jquery-ui.css" />
+        
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -26,13 +29,73 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDay" >Date: <input type="text" id="datepicker"></p>
+    </br>
+  </br>
+    <p>Enjoy</p>
+    <p>your daily</p>
+    <p>planner</p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+        <div class="row">
+          <div class="col-md-2 col-sm-2">
+            <ul id="unsortable">
+              <li class="time-block"><span>07:00</span></li>
+              <li class="time-block"><span>08:00</span></li>
+              <li class="time-block"><span>09:00</span></li>
+              <li class="time-block"><span>10:00</span></li>
+              <li class="time-block"><span>11:00</span></li>
+              <li class="time-block"><span>12:00</span></li>
+              <li class="time-block"><span>13:00</span></li>
+              <li class="time-block"><span>14:00</span></li>
+              <li class="time-block"><span>15:00</span></li>
+              <li class="time-block"><span>16:00</span></li>
+              <li class="time-block"><span>17:00</span></li>
+              <li class="time-block"><span>18:00</span></li>
+            </ul>
+          </div>
+          <div class="col-md-8 col-sm-2">
+            <ul  id="sortable">
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s" class="textarea"></span>1</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s" class="textarea"></span>2</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s" class="textarea"></span>3</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s" class="textarea"></span>4</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s" class="textarea"></span>5</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s" class="textarea"></span>6</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s" class="textarea"></span>7</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s" class="textarea"></span>8</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s" class="textarea"></span>9</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s" class="textarea"></span>10</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s" class="textarea"></span>11</li>
+              <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s" class="textarea"></span>12</li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-2">
+          <ul id="saveBtn">
+            <li ><button class="saveBtn" type="submit">Save</button></li>
+            <li ><button class="saveBtn" type="submit">Save</button></li>
+            <li ><button class="saveBtn" type="submit">Save</button></li>
+            <li ><button class="saveBtn" type="submit">Save</button></li>
+            <li ><button class="saveBtn" type="submit">Save</button></li>
+            <li ><button class="saveBtn" type="submit">Save</button></li>
+            <li ><button class="saveBtn" type="submit">Save</button></li>
+            <li ><button class="saveBtn" type="submit">Save</button></li>
+            <li ><button class="saveBtn" type="submit">Save</button></li>
+            <li ><button class="saveBtn" type="submit">Save</button></li>
+            <li ><button class="saveBtn" type="submit">Save</button></li>
+            <li ><button class="saveBtn" type="submit">Save</button></li>
+          </ul>
+        </div>
+      </div>
     </div>
-
+       
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="./assets/js/jquery-3.6.0.js"></script>
+    <script src="./assets/js/jquery-ui.js"></script>
+    <script src="./assets/js/script.js"></script>
+
   </body>
 </html>

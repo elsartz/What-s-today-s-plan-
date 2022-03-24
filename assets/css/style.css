@@ -1,0 +1,138 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  color: rgb(204, 141, 6);
+  border-radius: 0;
+  margin-bottom: 10px;
+  background-image: url("../images/backgroundImage.jpg");
+  background-image: -o-repeating-linear-gradient();
+  background-size: contain;
+  /* border-bottom: 10px solid black; */
+}
+
+.lead {
+  background-color: beige;
+}
+
+.description{
+  white-space: pre-wrap;
+}
+
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 100%;
+  margin-top: 0;
+  /* border-top: 5px solid rgb(12, 11, 11);; */
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+#saveBtn ul {
+  height: 40px;
+}
+
+#saveBtn {
+  list-style: none;
+  margin: 0;
+}
+
+.saveBtn {
+  border-left: 2px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+  
+  height: 40px;
+  
+  
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+}
+
+#sortable { 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  width: 100%;
+}
+
+#sortable li { 
+  margin: 0 3px 3px 3px; 
+  padding: 0.4em; 
+  padding-left: 1.5em; 
+  font-size: 1.4em; 
+  height: 40px; 
+  width: 100%;
+  background-color: rgb(245, 227, 205);
+}
+
+#sortable li span { 
+  position: absolute; 
+  margin-left: -1.3em; 
+}
+
+#unsortable { 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  width: 100%;
+}
+
+#unsortable li { 
+  margin: 0 3px 3px 3px; 
+  padding: 0.4em; 
+  padding-left: 1.5em; 
+  font-size: 1.4em; 
+  height: 40px; 
+  width: 100%;
+  background-color: bisque;
+}
+
+#unsortable li span { 
+  position: absolute; 
+  margin-left: -1.3em; 
+}
