@@ -1,12 +1,4 @@
 
-// $( function() {
-//   $("#sortable").sortable({
-//     update: function() {
-//       var tempArry = [];
-//       $(this)
-//     }
-//   });
-// });
 
 
 $( function() {

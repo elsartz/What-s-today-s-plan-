@@ -136,12 +136,7 @@ textarea{
   font-size: 1.4em; 
   height: 80px; 
   width: 100%;
-  align-items: center;
-  justify-content: center;
   background-color: bisque;
 }
 
-#unsortable li span { 
-  position: absolute; 
-  margin-left: -1.3em; 
-}
+/*  */
