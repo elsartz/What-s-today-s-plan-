@@ -1,12 +1,12 @@
 
-$( function() {
-  $("#sortable").sortable({
-    update: function() {
-      var tempArry = [];
-      $(this)
-    }
-  });
-});
+// $( function() {
+//   $("#sortable").sortable({
+//     update: function() {
+//       var tempArry = [];
+//       $(this)
+//     }
+//   });
+// });
 
 
 $( function() {
