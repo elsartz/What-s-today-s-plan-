@@ -1,10 +1,17 @@
 
 $( function() {
-  $("#sortable").sortable();
+  $("#sortable").sortable({
+    update: function() {
+      var tempArry = [];
+      $(this)
+    }
+  });
 });
 
 
 $( function() {
-  $( "#datepicker" ).datepicker();
+  $( "#datepicker" ).datepicker({
+    minDate: 0
+  });
 });
 
