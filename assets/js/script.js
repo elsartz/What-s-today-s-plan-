@@ -41,7 +41,7 @@ console.log(timeId);
 
 
 
-time = 11;
+// time = 11;
 
 for (var i=0; i< index.length; i++){
   // timeId[i] = "#"+i;

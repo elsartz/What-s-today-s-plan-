@@ -48,7 +48,7 @@ textarea{
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
+  /* height: 80px; */
   margin-top: 0;
   /* border-top: 5px solid rgb(12, 11, 11);; */
 }
@@ -75,7 +75,7 @@ textarea{
 }
 
 #saveBtn ul {
-  height: 40px;
+  /* height: 40px; */
 }
 
 #saveBtn {
@@ -90,7 +90,7 @@ textarea{
   background-color: #06AED5;
   color: white;
   
-  height: 80px;
+  /* height: 80px; */
   
   
 }
@@ -112,7 +112,7 @@ textarea{
   padding: 0.4em; 
   padding-left: 1.5em; 
   font-size: 1.4em; 
-  height: 80px; 
+  /* height: 80px;  */
   width: 100%;
   background-color: rgb(245, 227, 205);
 }
