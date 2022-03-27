@@ -78,10 +78,10 @@ var buttonHandler = function(event) {
   var targetEl = event.target;
   console.log(targetEl);
 
-  
-    if (targetEl.matches("b0")) {
+  var i=0;
+    if (targetEl.matches(".b0")) {
 
-      text = $("input", '"#"+i').val();
+      text = $("input", "#"+i).val();
       console.log(text);
       localStorage.setItem("text", JSON.stringify(text));
     }
