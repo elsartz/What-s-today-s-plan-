@@ -11,8 +11,7 @@ $( function() {
      onSelect: function() { 
       var dateObject = $(this).datepicker('getDate'); 
       localStorage.setItem('selectedDay',JSON.stringify(dateObject));
-      
-      // console.log(dateObject);
+     
      }
   });
 });
@@ -22,50 +21,48 @@ var selectedDay = localStorage.getItem('selectedDay');
 console.log(JSON.parse(selectedDay));
 
 
-// 
-$("#sortable").on("textarea", function(){
-  var textInput = $(this).val();
-  console.log(this);
-})
-// 
+
 
 
 var currentDay = new Date;
 var time = currentDay.getHours();
+var minutes = currentDay.getMinutes();
 console.log(time);
 
 var timeId = ["07","08","09","10","11","12","13","14","15","16","17","18"];
 var timeIdEl = "";
-console.log(timeId);
-// $("container").on("click", function(){
 
-
-
-// time = 11;
-
+var updateTime = function() {
 for (var i=0; i< index.length; i++){
-  // timeId[i] = "#"+i;
-  // timeId.push(i);
-    // console.log(timeId);
-
-// debugger;
+  
     if (time > parseInt(timeId[i])) {
-      // console.log(time);
-      // console.log(timeId[i]);
+      
       timeIdEl = "#"+i;
-      // console.log(timeIdEl);
+      
       $(timeIdEl).addClass("past");
       $(timeIdEl).removeClass("present");
+
     } else if (time < timeId[i]) {
       timeIdEl = "#"+i;
         $(timeIdEl).addClass("future");
         $(timeIdEl).removeClass("present");
     }
   }
+}
+
+var checkTime = function() {
+  if (minutes !== 0) {
+    updateTime();
+  }
+}
 
 
-// });
-  // console.log(timeId[3]);
+$("description").on
+
+
+
+
+
 
 
 
@@ -74,3 +71,6 @@ for (var i=0; i< index.length; i++){
   var saveEvent = function() {
     localStorage.setItem("textEvent", JSON.stringify());
   }
+
+updateTime();
+
