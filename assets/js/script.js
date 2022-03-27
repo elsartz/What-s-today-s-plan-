@@ -86,7 +86,7 @@ var buttonHandler = function(event) {
       localStorage.setItem("text", JSON.stringify(text));
     }
   
-  
+  checkTime();
 }
 
 
