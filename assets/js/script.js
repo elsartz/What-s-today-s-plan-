@@ -71,7 +71,7 @@ $("input").on("blur", "textarea", function() {
 
 
 var saveEl = document.querySelector("#save");
-var text = [];
+var text = "123";
 
 var buttonHandler = function(event) {
   console.log("click");
@@ -97,8 +97,9 @@ console.log(saveEl);
 
 
 
-  var saveEvent = function() {
-    
+  var setLocal = function() {
+    text = this;
+    console.log(text);
   }
 
 saveEl.addEventListener("click", buttonHandler);
