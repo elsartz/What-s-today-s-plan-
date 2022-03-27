@@ -11,7 +11,7 @@ textarea{
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-  width: 80%;
+  width: 100%;
 }
 
 .jumbotron {
@@ -74,8 +74,8 @@ textarea{
   color: white;
 }
 
-#saveBtn ul {
-  /* height: 40px; */
+ul li {
+  list-style: none;
 }
 
 #saveBtn {
@@ -89,54 +89,9 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-  
-  /* height: 80px; */
-  
-  
 }
 
-.saveBtn i:hover {
+.saveBtn :hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
-
-#sortable { 
-  list-style-type: none; 
-  margin: 0; 
-  padding: 0; 
-  width: 100%;
-}
-
-#sortable li { 
-  margin: 0 3px 3px 3px; 
-  padding: 0.4em; 
-  padding-left: 1.5em; 
-  font-size: 1.4em; 
-  /* height: 80px;  */
-  width: 100%;
-  background-color: rgb(245, 227, 205);
-}
-
-#sortable li span { 
-  position: absolute; 
-  margin-left: -1.3em; 
-}
-
-#unsortable { 
-  list-style-type: none; 
-  margin: 0; 
-  padding: 0; 
-  width: 100%;
-}
-/* 
-#unsortable li { 
-  margin: 0 3px 3px 3px; 
-  padding: 0.4em; 
-  padding-left: 1.5em; 
-  font-size: 1.4em; 
-  height: 80px; 
-  width: 100%;
-  background-color: bisque;
-}
-
- */
