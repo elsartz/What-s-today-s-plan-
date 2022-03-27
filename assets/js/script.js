@@ -25,6 +25,8 @@ console.log(JSON.parse(selectedDay));
 
 
 var currentDay = new Date;
+var currentDate = currentDay.getFullYear()+"-"+(("0" + (currentDay.getMonth() + 1)).slice(-2))+"-"+("0" + currentDay.getDate()).slice(-2);
+console.log(currentDate);
 var time = currentDay.getHours();
 var minutes = currentDay.getMinutes();
 console.log(time);
@@ -57,11 +59,38 @@ var checkTime = function() {
 }
 
 
-$("description").on
+var eventNew = {};
+
+$("input").on("blur", "textarea", function() {
+  
+
+    
+    console.log(text);
+})
 
 
 
+var saveEl = document.querySelector("#save");
+var text = [];
 
+var buttonHandler = function(event) {
+  console.log("click");
+  var targetEl = event.target;
+  console.log(targetEl);
+
+  
+    if (targetEl.matches("b0")) {
+
+      text = $("input", '"#"+i').val();
+      console.log(text);
+      localStorage.setItem("text", JSON.stringify(text));
+    }
+  
+  
+}
+
+
+console.log(saveEl);
 
 
 
@@ -69,8 +98,9 @@ $("description").on
 
 
   var saveEvent = function() {
-    localStorage.setItem("textEvent", JSON.stringify());
+    
   }
 
+saveEl.addEventListener("click", buttonHandler);
 updateTime();
 
