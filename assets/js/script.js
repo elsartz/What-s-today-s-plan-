@@ -34,6 +34,7 @@ console.log(time);
 var timeId = ["07","08","09","10","11","12","13","14","15","16","17","18"];
 var timeIdEl = "";
 
+// time = 10;
 var updateTime = function() {
 for (var i=0; i< index.length; i++){
   
@@ -70,8 +71,8 @@ $("input").on("blur", "textarea", function() {
 
 
 
-var saveEl = document.querySelector(".save");
-var text = "123";
+var saveEl = document.querySelector(".container");
+var text = {};
 
 var buttonHandler = function(event) {
   console.log("click");
@@ -79,27 +80,23 @@ var buttonHandler = function(event) {
   console.log(targetEl);
 
   var i=0;
-    if (targetEl.matches(".b0")) {
-
-      text = $("input", "#"+i).val();
-      console.log(text);
-      localStorage.setItem("text", JSON.stringify(text));
-    }
+ 
   
   checkTime();
 }
 
 
-console.log(saveEl);
-
-
-
-
-
-
+var value = "";
   var setLocal = function() {
-    text = this;
-    console.log(text);
+    
+    $("input").on("blur", function() {
+      value = $( this ).val();
+    console.log(value);
+    
+  })
+  
+    console.log("setLocal");
+    
   }
 
 saveEl.addEventListener("click", buttonHandler);
