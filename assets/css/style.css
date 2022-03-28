@@ -84,7 +84,7 @@ ul li {
 }
 
 /* .saveBtn { */
-.save li button {
+.save {
   border-left: 2px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;

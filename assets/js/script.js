@@ -70,7 +70,7 @@ $("input").on("blur", "textarea", function() {
 
 
 
-var saveEl = document.querySelector("#save");
+var saveEl = document.querySelector(".save");
 var text = "123";
 
 var buttonHandler = function(event) {
