@@ -26,7 +26,7 @@ textarea{
   background-image: -o-repeating-linear-gradient();
   background-size: contain;
   
-  /* border-bottom: 10px solid black; */
+  border-bottom: 10px solid black; 
 }
 
 .fontOpac {
@@ -48,9 +48,9 @@ textarea{
 
 .row {
   white-space: pre-wrap;
-  /* height: 80px; */
+  height: 80px;
   margin-top: 0;
-  /* border-top: 5px solid rgb(12, 11, 11);; */
+  /* border-top: 5px solid rgb(12, 11, 11);; */ 
 }
 
 .hour {
