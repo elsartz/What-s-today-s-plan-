@@ -7,5 +7,5 @@ Keep track in real time your next event or what ever you have to do.
 
 ![Scheduler](https://github.com/elsartz/What-s-today-s-plan-/blob/main/assets/images/Screenshot%202022-03-27%20225144.png)
 
-> :point_right: [Work Day Scheduler]()
+> :point_right: [Work Day Scheduler](https://elsartz.github.io/What-s-today-s-plan-/)
 
