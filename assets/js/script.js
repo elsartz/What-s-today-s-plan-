@@ -25,7 +25,12 @@ console.log(JSON.parse(selectedDay));
 
 
 var currentDay = new Date;
-var currentDate = currentDay.getFullYear()+"-"+(("0" + (currentDay.getMonth() + 1)).slice(-2))+"-"+("0" + currentDay.getDate()).slice(-2);
+// without moments could be like :
+//currentDay.getFullYear()+"-"+(("0" + (currentDay.getMonth() + 1)).slice(-2))+"-"+("0" + currentDay.getDate()).slice(-2);
+
+var currentDate = moment().format('dddd, MMM Do YYYY');       
+$("#currentDay").html(currentDate);
+
 console.log(currentDate);
 var time = currentDay.getHours();
 var minutes = currentDay.getMinutes();
@@ -84,6 +89,7 @@ var saveEl = document.querySelector(".container");
 var text = {};
 
 var buttonHandler = function(event) {
+  
   console.log("click");
   var targetEl = event.target;
   console.log(targetEl);
