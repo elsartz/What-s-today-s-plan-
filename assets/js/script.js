@@ -1,6 +1,6 @@
 
 // Array for count purpose
-const index = [];
+var index = [];
 for (var i=0; i < 12; i++) {
   index.push(i);
 }
@@ -13,10 +13,9 @@ var currentDay = new Date;
 var currentDate = moment().format('dddd, MMM Do YYYY');       
 $("#currentDay").html(currentDate);
 
-console.log(currentDate);
 var time = currentDay.getHours();
 var minutes = currentDay.getMinutes();
-console.log(time);
+
 // Time table
 var timeId = ["07","08","09","10","11","12","13","14","15","16","17","18"];
 var timeIdEl = "";
@@ -48,16 +47,17 @@ var checkTime = function() {
 
 
 
-var value = {};
+var value = [];
+
+var permanentText = [];
 var currentText = [];
+// for (var i=0; i<12; i++) {currentText[i]="";}
+
+
 var setLocal = function() {
-    // the last defined text stored to local storage
-    $("textarea").on("blur", function() {
-      value = $( this ).val();
-    console.log(value);
-    localStorage.setItem("textArea", JSON.stringify(value));
-    currentText.push(localStorage.getItem("textArea"));
-    console.log(currentText[0]);
+// the last defined text 
+     $("textarea").on("blur", function() {
+       value = $( this ).val();
   })
       
 }
@@ -67,23 +67,94 @@ var saveEl = document.querySelector(".container");
 // click analyzer function
 var buttonHandler = function(event) {
   
-  console.log("click");
   var targetEl = event.target;
-  console.log(targetEl);
-  
-  // unfinish thinking
-  // var text = $(this).siblings(".description").val();
-  // console.log(text);
-  // var i=0;
- 
+
+  // console.log(event.target);
+
+ switch(parseInt(targetEl.id)) {
+   case 0:
+      localStorage.setItem("text0", JSON.stringify(value));
+      currentText[0] = JSON.parse(localStorage.getItem("text0"));   
+    break;
+   
+    case 1:     
+      localStorage.setItem("text1", JSON.stringify(value));
+      currentText[1] = JSON.parse(localStorage.getItem("text1"));     
+    break;
+
+    case 2:     
+      localStorage.setItem("text2", JSON.stringify(value));
+      currentText[2] = JSON.parse(localStorage.getItem("text2"));       
+    break;
+    
+    case 3:  
+      localStorage.setItem("text3", JSON.stringify(value));
+      currentText[3] = JSON.parse(localStorage.getItem("text3"));      
+    break;
+
+    case 4:     
+      localStorage.setItem("text4", JSON.stringify(value));
+      currentText[4] = JSON.parse(localStorage.getItem("text4"));   
+    break;
+
+    case 5:     
+      localStorage.setItem("text5", JSON.stringify(value));
+      currentText[5] = JSON.parse(localStorage.getItem("text5"));   
+    break;
+
+    case 6:     
+      localStorage.setItem("text6", JSON.stringify(value));
+      currentText[6] = JSON.parse(localStorage.getItem("text6"));   
+    break;
+
+    case 7:     
+      localStorage.setItem("text7", JSON.stringify(value));
+      currentText[7] = JSON.parse(localStorage.getItem("text7"));   
+    break;
+
+    case 8:     
+      localStorage.setItem("text8", JSON.stringify(value));
+      currentText[8] = JSON.parse(localStorage.getItem("text8"));   
+    break;
+
+    case 9:     
+      localStorage.setItem("text9", JSON.stringify(value));
+      currentText[9] = JSON.parse(localStorage.getItem("text9"));   
+    break;
+
+    case 10:     
+      localStorage.setItem("text10", JSON.stringify(value));
+      currentText[10] = JSON.parse(localStorage.getItem("text10"));   
+    break;
+
+    case 11:     
+      localStorage.setItem("text11", JSON.stringify(value));
+      currentText[11] = JSON.parse(localStorage.getItem("text11"));   
+    break;
+ }
+
   // Automatic with any click color change and of course if minutes not zero
   checkTime();
 }
 
+var planning = function() {
 
+var textEl = document.querySelectorAll("textarea");
+console.log(textEl);
+
+  
+
+  for (var i=0; i < 12; i++) {
+    textEl[i].textContent = currentText[i];
+    console.log(currentText[i]);
+    console.log(textEl[i]);
+  }
+}
+
+// Update time table
+updateTime();
+// Today's plan
+planning();
 
 // Start listening
 saveEl.addEventListener("click", buttonHandler);
-// Update time table
-updateTime();
-
