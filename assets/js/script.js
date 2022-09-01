@@ -51,7 +51,7 @@ var value = [];
 
 var permanentText = [];
 var currentText = [];
-// for (var i=0; i<12; i++) {currentText[i]="";}
+for (var i=0; i<12; i++) {currentText[i]="";}
 
 
 var setLocal = function() {
@@ -135,19 +135,22 @@ var buttonHandler = function(event) {
 
   // Automatic with any click color change and of course if minutes not zero
   checkTime();
+  planning();
 }
 
 var planning = function() {
 
 var textEl = document.querySelectorAll("textarea");
-console.log(textEl);
-
-  
+// console.log(textEl[0].textContent)
 
   for (var i=0; i < 12; i++) {
+
+    currentText[i] = JSON.parse(localStorage.getItem("text"+i)); 
+
     textEl[i].textContent = currentText[i];
-    console.log(currentText[i]);
-    console.log(textEl[i]);
+    // console.log(currentText[i]);
+    // console.log(textEl[i]);
+
   }
 }
 
